@@ -1,0 +1,17 @@
+
+	
+Yes, it's a recent technology. Compile pocketsphinx from subversion, download en-us generic acoustic model, convert file to 16khz 16bit mono, run pocketsphinx_kws -hmm en-us -infile file.wav -kws "key phrase" –  
+
+pocketsphinx_continuous itself has kws inbuilt. You can use pocketsphinx_continuous -hmm en-us -infile file.wav -dict dictfile.dict -kws "keyphrase"
+
+Command: pocketsphinx_continuous.exe -argfile argFile.txt -infile .\test_files\my_audio.wav
+
+argFile:
+
+-dict ./model/lm/cmu07a.dic
+-hmm ./model/hmm/en_broadcastnews_16k_ptm256_5000
+-lm ./model/lm/en-70k.dmp
+-kws ./model/keyphrase.file
+-kws_threshold 0.95
+
+http://sourceforge.net/p/cmusphinx/discussion/help/thread/8b6cca9d/?limit=25

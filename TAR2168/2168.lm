@@ -1,0 +1,59 @@
+Language model created by QuickLM on Wed Feb 18 13:54:36 EST 2015
+Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
+
+The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
+
+The code that was used to produce this language model is available in Open Source.
+Please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
+This model based on a corpus of 4 sentences and 11 words
+
+\data\
+ngram 1=11
+ngram 2=14
+ngram 3=11
+
+\1-grams:
+-0.9777 </s> -0.3010
+-0.9777 <s> -0.2398
+-1.2788 BYE -0.2264
+-1.5798 CURRENT -0.2775
+-1.5798 ENTER -0.2894
+-1.5798 EXIT -0.2894
+-1.2788 MODE -0.2527
+-1.5798 ROBOT -0.2527
+-1.5798 SLEEPING -0.2775
+-1.5798 UP -0.2894
+-1.5798 WAKE -0.2894
+
+\2-grams:
+-0.9031 <s> BYE -0.1761
+-0.9031 <s> ENTER 0.0000
+-0.9031 <s> EXIT 0.0000
+-0.9031 <s> WAKE 0.0000
+-0.6021 BYE </s> -0.3010
+-0.6021 BYE BYE -0.1761
+-0.3010 CURRENT MODE 0.0000
+-0.3010 ENTER SLEEPING 0.0000
+-0.3010 EXIT CURRENT 0.0000
+-0.3010 MODE </s> -0.3010
+-0.3010 ROBOT </s> -0.3010
+-0.3010 SLEEPING MODE 0.0000
+-0.3010 UP ROBOT 0.0000
+-0.3010 WAKE UP 0.0000
+
+\3-grams:
+-0.3010 <s> BYE BYE
+-0.3010 <s> ENTER SLEEPING
+-0.3010 <s> EXIT CURRENT
+-0.3010 <s> WAKE UP
+-0.3010 BYE BYE </s>
+-0.3010 CURRENT MODE </s>
+-0.3010 ENTER SLEEPING MODE
+-0.3010 EXIT CURRENT MODE
+-0.3010 SLEEPING MODE </s>
+-0.3010 UP ROBOT </s>
+-0.3010 WAKE UP ROBOT
+
+\end\
