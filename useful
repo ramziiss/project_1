@@ -15,3 +15,5 @@ argFile:
 -kws_threshold 0.95
 
 http://sourceforge.net/p/cmusphinx/discussion/help/thread/8b6cca9d/?limit=25
+
+ pocketsphinx_continuous -dict TAR4526/4526.dic -hmm cmusphinx-en-us-5.2 -kws wakeup  -inmic yes
